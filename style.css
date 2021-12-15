@@ -1,5 +1,7 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css");
-
+*{
+  font-family: 'Russo One', sans-serif;
+}
 body{
     background-image: linear-gradient(rgb(10,20,30),rgb(16, 29, 32));
     color:skyblue;
@@ -106,5 +108,43 @@ img{
     display: flex;
     justify-content: space-around;
     align-items: center;
+  }
+  
+  @media screen and (max-width: 720px) {
+    /*changes reflects on screen with a width of 720px and below*/
+    .about-me{
+      display:flex;
+      flex-direction: column;
+    }
+    *{
+      scale: 99%;
+      flex-direction: column;
+      max-width: 250px;
+      text-align: center;
+      font-size: small;
+      margin: 1%;
+      padding: 0;
+    }
+    .navbar{
+      margin-left: 10%;
+    }
+    .box{
+      padding:0;
+      align-content: center;
+    }
+    iframe{
+      width: 280px;
+    }
+    .linkedin{
+      display: flex; 
+      position: relative;
+      left: -25%;       
+    }
+    .toasty{
+      display:none;
+    }
+    .img-blur{
+      width: 350px;
+    }
   }
   
