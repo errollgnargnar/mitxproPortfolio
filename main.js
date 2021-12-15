@@ -43,29 +43,29 @@ document.onmousemove = (e) => {
     ball.transform = "translate(-" + x + ",-" + y + ")";
 };
 
-let quotes;
-let quote;
-fetch('quotes.json')
-  .then(response => response.json())
-  .then(data => {
-      quotes = data;
-      console.log(quotes);
-      return quotes
-  })
-  .then(quotes => {
+// let quotes;
+// let quote;
+// fetch('quotes.json')
+//   .then(response => response.json())
+//   .then(data => {
+//       quotes = data;
+//       console.log(quotes);
+//       return quotes
+//   })
+//   .then(quotes => {
 
-      var toastTrigger = document.getElementById('liveToastBtn')
-      var toastLiveExample = document.getElementById('liveToast')
+//       var toastTrigger = document.getElementById('liveToastBtn')
+//       var toastLiveExample = document.getElementById('liveToast')
 
-        toastTrigger.addEventListener('click', function () {
-            let randomQuoteIndex = Math.floor(Math.random() * quotes.length);
-            console.log(quotes[randomQuoteIndex].quote);
-            quote = quotes[randomQuoteIndex].quote;
-          var toast = new bootstrap.Toast(toastLiveExample)
-          document.querySelector('.toast-body').innerHTML = quote;
-          toast.show()
-        })
-      toastTrigger.click();   
-  })
+//         toastTrigger.addEventListener('click', function () {
+//             let randomQuoteIndex = Math.floor(Math.random() * quotes.length);
+//             console.log(quotes[randomQuoteIndex].quote);
+//             quote = quotes[randomQuoteIndex].quote;
+//           var toast = new bootstrap.Toast(toastLiveExample)
+//           document.querySelector('.toast-body').innerHTML = quote;
+//           toast.show()
+//         })
+//       toastTrigger.click();   
+//   })
 
 
