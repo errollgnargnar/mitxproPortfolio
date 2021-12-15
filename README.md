@@ -3,7 +3,7 @@
 This website is a Portfolio of some of the work I have done during the MIT xPro Full Stack Web Development course. Here you will find HTML,CSS, and JS work.
 
 ## How to Run
-You can view my portfolio by clicking [https://errollgnargnar.github.io/mitxproPortfolio/](here).
+You can view my portfolio by clicking <https://errollgnargnar.github.io/mitxproPortfolio/>
 
 ## Roadmap for Future Improvements
 - Have fade in come in from left and right rather than at initial position.
