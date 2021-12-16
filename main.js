@@ -21,8 +21,8 @@ function scanDocument() {
     });
 }
 
-// document.addEventListener('scroll', throttle(scanDocument, 125));
-// document.addEventListener('load', throttle(scanDocument,125));
+document.addEventListener('scroll', throttle(scanDocument, 125));
+document.addEventListener('load', scanDocument());
 
 function throttle(fn, wait) {
     var time = Date.now();
