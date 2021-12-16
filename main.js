@@ -22,7 +22,7 @@ function scanDocument() {
 }
 
 document.addEventListener('scroll', throttle(scanDocument, 125));
-document.addEventListener('load', scanDocument());
+document.addEventListener('load', throttle(scanDocument,125));
 
 function throttle(fn, wait) {
     var time = Date.now();
